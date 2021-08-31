@@ -4,6 +4,7 @@ function App() {
 
     function renderProducts() {
         const products = [
+            'IMG_6629.jpg',
             'IMG_9062.jpg',
             'IMG_9063.jpg',
             'IMG_9067.jpg',
@@ -19,6 +20,9 @@ function App() {
 
         for (const [i, product] of products.entries()) {
             list.push(
+                <table>
+                    <td>
+
                 <li>{i + 1}
                     <span> - </span>
                     <span>
@@ -26,7 +30,10 @@ function App() {
                             <img src={'image/'+product} height={window.innerHeight / 10}/>
                         </a>
                     </span>
-                </li>);
+                </li>
+                    </td>
+                </table>
+                    );
         }
 
         return (
