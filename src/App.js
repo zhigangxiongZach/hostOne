@@ -20,7 +20,7 @@ function App() {
                     <span> - </span>
                     <span>
                         <a href={'image/' + product}>
-                            <img src={'image/' + product} height={window.innerHeight / 5}/>
+                            <img alt={"image"} src={'image/s' + product} height={window.innerHeight / 2}/>
                         </a>
                     </span>
                 </li>
